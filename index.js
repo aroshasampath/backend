@@ -40,7 +40,7 @@ const connectionString ="mongodb+srv://admin:123@cluster0.ihdab1b.mongodb.net/?a
 
 mongoose.connect(connectionString).then(
     ()=>{
-        console.log("database connected.")
+        console.log("database connected successfully.")
     }
 ).catch(
     ()=>{
