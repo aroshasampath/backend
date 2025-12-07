@@ -36,10 +36,15 @@ const productSchema =new mongoose.Schema(
         category:{
             type:String,
             required:true
+        },
+        stock:{
+            type:Number,
+            required:true,
+            default: 0
         }
 
     }
 )
 
 const Product = mongoose.model("Product",productSchema)
-export default Product
+export default Product 
